@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sleep.css">
+    <title>LEGAL PIRATES STATUS</title>
+</head>
+<body>
+<section id="banner">
+    <div class="innercontainer">
+		<div class="container">
+			<p>Sleep timer</p>
+			<!-- time to add the controls -->
+			<input id="start" name="controls" type="radio" />
+			<input id="stop" name="controls" type="radio" />
+			<input id="reset" name="controls" type="radio" />
+			<div class="timer">
+				<div class="cell">
+					<div class="numbers tenhour moveten">0 1 2 3 4 5 6 7 8 9</div>
+				</div>
+				<div class="cell">
+					<div class="numbers hour moveten">0 1 2 3 4 5 6 7 8 9</div>
+				</div>
+				<div class="cell divider"><div class="numbers">:</div></div>
+				<div class="cell">
+					<div class="numbers tenminute movesix">0 1 2 3 4 5 6</div>
+				</div>
+				<div class="cell">
+					<div class="numbers minute moveten">0 1 2 3 4 5 6 7 8 9</div>
+				</div>
+				<div class="cell divider"><div class="numbers">:</div></div>
+				<div class="cell">
+					<div class="numbers tensecond movesix">0 1 2 3 4 5 6</div>
+				</div>
+				<div class="cell">
+					<div class="numbers second moveten">0 1 2 3 4 5 6 7 8 9</div>
+				</div>
+				<div class="cell divider"><div class="numbers">:</div></div>
+				<div class="cell">
+					<div class="numbers milisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+				</div>
+				<div class="cell">
+					<div class="numbers tenmilisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+				</div>
+				<div class="cell">
+					<div class="numbers hundredmilisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+				</div>
+			</div>
+			<!-- Lables for the controls -->
+			<div id="timer_controls">
+				<label for="start"><img src="./playicon.png" alt=""></label>
+				<label for="stop"><img src="./pauseicon.png" alt=""></label>
+				<label for="reset"><img src="./reseticon.png" alt=""></label>
+			</div>
+		</div>
+    </div>
+</section>
+<div id="sidenav">
+    <nav>
+        <ul>
+            <li><a href="./home.html"><span><img src="./Homeicon.png" alt=""></span>  HOME</a></li>
+            <li><a href="./4TASK.html"><span><img src="./taskicon.png" alt=""></span>  TASK</a></li>
+            <li><a href="./status.html"><span><img src="./statusicon24.png" alt=""></span>  STATUS</a></li>
+            <li><a href="./about.html"><span><img src="./abouticon242.png" alt=""></span>  ABOUT</a></li>
+            <li><a href="./contactus.html"><span><img src="./contactusicon24.png" alt=""></span>  CONTACT US</a></li>
+        </ul>
+    </nav>
+
+</div>
+<div id="menubtn">
+    <img src="./menubtn24.png" alt="icon" id="menu">
+</div>
+<div id="logo">
+    <img src="./Logo_5.png" alt="">
+    <p>LEGAL PIRATES</p>
+
+</div>
+
+
+
+
+
+
+
+<!--Java-->
+<script>
+var menubtn = document.getElementById("menubtn")
+var sidenav = document.getElementById("sidenav")
+var menu = document.getElementById("menu")
+
+sidenav.style.right = "-250px"
+
+menubtn.onclick = function(){
+    if(sidenav.style.right == "-250px"){
+        sidenav.style.right = "0";
+        menu.src = "closeicon32.png";
+    }
+    else{
+        sidenav.style.right = "-250px";
+        menu.src = "menubtn24.png";
+    }
+}
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+<!-- this script got from www.htmlbestcodes.com - Coded by: Krishna Eydat -->
+
+<html>
+<head>
+<style>
+* {margin: 0; padding: 0;}
+
+
+</style>
+</head>
+<body style="background-color:#000">
+
+
+</body>
+</html><a target="_blank" href="https://www.htmlbestcodes.com/" style="font-size: 8pt; text-decoration: none;font-family:Tahoma">HTML Best Codes</a>

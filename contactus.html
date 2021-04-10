@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./contactus.css">
+    <title>LEGAL PIRATES STATUS</title>
+</head>
+<body>
+<section id="banner">
+    <div class="innercontainer">
+        <div class="icon">
+        <a href="https://www.instagram.com/"><img src="instagramicon144.png" alt=""></a>
+        <a href="https://www.facebook.com/"><img src="facebookicon144.png" alt=""></a>
+        <a href="https://twitter.com/"><img src="twittericon144.png" alt=""></a>
+        <a href="https://www.linkedin.com/"><img src="linkedinicon144.png" alt=""></a>
+        </div>
+        <div class="mail">
+            <a href="https://mail.google.com/mail/"><img src="./gmailicon144.png" alt=""></a>
+        </div>
+        <div class="para">
+            <p>LEGAL PIRATES</p>
+        </div>
+    </div>
+
+</section>
+<div id="sidenav">
+    <nav>
+        <ul>
+            <li><a href="./home.html"><span><img src="./Homeicon.png" alt=""></span>  HOME</a></li>
+            <li><a href="./4TASK.html"><span><img src="./taskicon.png" alt=""></span>  TASK</a></li>
+            <li><a href="./status.html"><span><img src="./statusicon24.png" alt=""></span>  STATUS</a></li>
+            <li><a href="./about.html"><span><img src="./abouticon242.png" alt=""></span>  ABOUT</a></li>
+            <li><a href="./contactus.html"><span><img src="./contactusicon24.png" alt=""></span>  CONTACT US</a></li>
+        </ul>
+    </nav>
+
+</div>
+<div id="menubtn">
+    <img src="./menubtn24.png" alt="icon" id="menu">
+</div>
+<div id="logo">
+    <img src="./Logo_5.png" alt="">
+    <p>LEGAL PIRATES</p>
+</div>
+
+
+
+
+
+
+
+<!--Java-->
+<script>
+var menubtn = document.getElementById("menubtn")
+var sidenav = document.getElementById("sidenav")
+var menu = document.getElementById("menu")
+
+sidenav.style.right = "-250px"
+
+menubtn.onclick = function(){
+    if(sidenav.style.right == "-250px"){
+        sidenav.style.right = "0";
+        menu.src = "closeicon32.png";
+    }
+    else{
+        sidenav.style.right = "-250px";
+        menu.src = "menubtn24.png";
+    }
+}
+</script>
+
+
+
+
+</body>
+</html>

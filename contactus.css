@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0, 189, 86, 0.7)), url(./BG2.jpg);
+    display: flex;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.innercontainer{
+    background: rgb(221, 218, 218);
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .8);
+    height: 75vh;
+    width: 90vw;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.icon img{
+    width: 80px;
+    height: 80px;
+    padding: 3% 50px 3%;
+}
+
+.mail img{
+    width: 144px;
+    height: 144px;
+    padding: 3%;
+
+}
+
+
+#logo{
+    text-align: center;
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    z-index: 4;
+    display: flex;
+}
+
+#logo img{
+    width: 90px;
+    height: 45px;
+}
+
+#logo p{
+    color: white;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.para p{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+
+#sidenav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #00bd56;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#menubtn{
+    width: 50px;
+    height: 50px;
+    background: #00bd56;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+
+}
+
+#menubtn img{
+    width: 20px;
+    margin-top: 15px;
+}
+
+#sidenav img span{
+    padding-left: 20px;
+    
+}
+
+@media screen and (max-width: 770px){
+    #logo{
+        display: flex;
+        flex-direction: column;
+    }
+    #logo img{
+        width: 70px;
+        height: 40px;
+    }
+    #logo p{
+        font-size: 12px;
+
+    }
+    .mail img{
+        width: 100px;
+        height: 100px;
+    
+    }
+    
+    .icon img{
+        width: 50px;
+        height: 50px;
+        padding: 9% 50px 9%;
+    }
+}

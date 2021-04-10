@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./status.css">
+    <title>LEGAL PIRATES STATUS</title>
+</head>
+<body>
+<section id="banner">
+    <div class="innercontainer">
+       
+        <p>Exercise</p>
+        <div class="container">
+          <div class="skills exercise">90%</div>
+        </div>
+        
+        <p>Sleeping Hours</p>
+        <div class="container">
+          <div class="skills sleeping">80%</div>
+        </div>
+        
+        <p>Daily Task</p>
+        <div class="container">
+          <div class="skills dailytask">65%</div>
+        </div>
+
+    </div>       
+</section>
+<div id="sidenav">
+    <nav>
+        <ul>
+            <li><a href="./home.html"><span><img src="./Homeicon.png" alt=""></span>  HOME</a></li>
+            <li><a href="./4TASK.html"><span><img src="./taskicon.png" alt=""></span>  TASK</a></li>
+            <li><a href="./status.html"><span><img src="./statusicon24.png" alt=""></span>  STATUS</a></li>
+            <li><a href="./about.html"><span><img src="./abouticon242.png" alt=""></span>  ABOUT</a></li>
+            <li><a href="./contactus.html"><span><img src="./contactusicon24.png" alt=""></span>  CONTACT US</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div id="menubtn">
+    <img src="./menubtn24.png" alt="icon" id="menu">
+</div>
+<div id="logo">
+    <img src="./Logo_5.png" alt="logo">
+    <p>LEGAL PIRATES</p>
+
+</div>
+
+
+
+
+<!--Java-->
+<!--menubar-->
+<script>
+var menubtn = document.getElementById("menubtn")
+var sidenav = document.getElementById("sidenav")
+var menu = document.getElementById("menu")
+
+sidenav.style.right = "-250px"
+
+menubtn.onclick = function(){
+    if(sidenav.style.right == "-250px"){
+        sidenav.style.right = "0";
+        menu.src = "closeicon32.png";
+    }
+    else{
+        sidenav.style.right = "-250px";
+        menu.src = "menubtn24.png";
+    }
+}
+</script>
+
+<!--statusbar-->
+<script>
+    $(".bar").each(function(){
+  $(this).find(".bar-inner").animate({
+    width: $(this).attr("data-width")
+  },2000)
+});
+</script>
+
+
+</body>
+</html>

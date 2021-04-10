@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>exercises</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="todotask.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <section>
+                <div id="sidenav">
+                    <nav>
+                        <ul class="sideul">
+                            <li class="sidlist"><a href="./home.html"><img src="./Homeicon.png" alt="" class="atag">  HOME</a></li>
+                            <li class="sidlist"><a href="./4TASK.html"><img src="./taskicon.png" alt="" class="atag">  TASK</a></li>
+                            <li class="sidlist"><a href="./status.html"><img src="./statusicon24.png" alt="" class="atag">  STATUS</a></li>
+                            <li class="sidlist"><a href="./about.html"><img src="./abouticon242.png" alt="" class="atag">  ABOUT</a></li>
+                            <li class="sidlist"><a href="./contactus.html"><img src="./contactusicon24.png" alt="" class="atag">  CONTACT US</a></li>
+                        </ul>
+                    </nav>
+                
+                </div>
+
+            </section>
+            
+            <div id="menubtn">
+                <img src="./menubtn24.png" alt="icon" id="menu">
+            </div>
+            <div id="logo">
+              <img src="./Logo_5.png" alt="">
+              <p>LEGAL PIRATES</p>
+           </div> 
+        <div id="myDIV" class="header">
+            <h2>My To Do List</h2>
+            <input type="text" id="myInput" placeholder="Title...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+          </div>
+          
+          <ul id="myUL" type="none">
+            <li class="myli" id="w2">Hit the gym</li>
+            <li class="myli checked">Pay bills</li>
+            <li class="myli">Recharge mobile</li>
+            <li class="myli">Buy Medicine</li>
+            <li class="myli">Read a book</li>
+            <li class="myli">To finish homework</li>
+          </ul>
+        </div>
+        
+        <Script>
+        var menubtn = document.getElementById("menubtn")
+        var sidenav = document.getElementById("sidenav")
+        var menu = document.getElementById("menu")
+    
+        sidenav.style.right = "-250px"
+    
+        menubtn.onclick = function(){
+        if(sidenav.style.right == "-250px"){
+            sidenav.style.right = "0";
+            menu.src = "closeicon32.png";
+            }
+        else{
+            sidenav.style.right = "-250px";
+            menu.src = "menubtn24.png";
+            }
+        }
+        </Script>
+
+<script>        // Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByClassName("myli");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('#myUL');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>  
+        
+    </body>
+</html>           
